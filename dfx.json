@@ -1,6 +1,6 @@
 {
   "canisters": {
-    "token": {
+    "standard": {
       "main": "examples/standard.mo"
     }
   },
