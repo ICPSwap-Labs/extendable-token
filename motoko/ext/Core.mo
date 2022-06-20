@@ -53,6 +53,7 @@ module ExtCore = {
   public type TransferResponse = Result.Result<Balance, {
     #Unauthorized: AccountIdentifier;
     #InsufficientBalance;
+    #InsufficientAllowance;
     #Rejected; //Rejected by canister
     #InvalidToken: TokenIdentifier;
     #CannotNotify: AccountIdentifier;
