@@ -5,6 +5,13 @@ import Result "mo:base/Result";
 
 import ExtCore "./Core";
 module ExtCommon = {
+  public type Page<T> = {
+    totalElements: Nat;
+    content: [T];
+    offset: Nat;
+    limit: Nat;
+  };
+  
   public type Metadata = {
     #fungible : {
       name : Text;
